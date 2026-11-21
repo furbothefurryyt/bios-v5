@@ -5,7 +5,7 @@ print("for changing boot paths, go to line 52")
 -- setting version variables
 local version = 5
 local subversion = 2
-local hotfix = 0
+local hotfix = 1
 
 -- initialize all the peripherals needed
 local monitor = peripheral.find("monitor")
@@ -38,7 +38,7 @@ end
 if drive then
     print("(i) CD/ROM found, bootable media is possible.")
 else
-    print("(!) No CD/ROM was found, please mount a ")
+    print("(!) No CD/ROM was found, please mount a drive to be able to boot files.")
     sleep(1)
 end
 
